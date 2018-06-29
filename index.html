@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>projet dealabs</title>
   
-    <script src="jquery-3.3.1.min.js">  </script>
-  
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
 
 
     </head>
@@ -15,30 +15,20 @@
 
     <h1> deadlabs</h1>
 
-    <script> 
-
-var cheerio = require('cheerio');
-var request = require('request');
-request('https://www.dealabs.com/nouveaux', function (error, response, body) {
-  console.log(body);
+    
 
   
 
-  var tab = []
+  <!--/*var tab = []
   $('.thead-image').each(function(index, element){
   tab[index] = {}
 
   /*var image = $(this).find('.thread-image').text()*/
 
-  tab[index]['nom'] = $(this).find().text('');
-  tab[index]['description'] = $(this).find('')
-  tab[index]['prix'] = $(this).find('')
-  tab[index]['image'] = $(this).find()
-
-
-
-
-  })
+  /*tab[index]['nom'] = $(this).find().text('.thread-image');
+  tab[index]['description'] = $(this).find('.cept-description-container');
+  tab[index]['prix'] = $(this).find('.thread-price');
+  tab[index]['image'] = $(this).find('.thread-image');*/
 
 
 /*var $  = cheerio.load(body);
@@ -47,24 +37,81 @@ var toto = $('.thead-image').each(function() {
 console.log($('.thread-image'));
 
 };
-*/
-  
+*/-->
 
- /*objet = $ objet = cheerio.load(body);
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">BARRE</a>
+  <button class="navbar-toggler" type="button" list-style-type: disc data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+
+
+ <!-- objet = $ objet = cheerio.load(body);
     $('div.theadGrid').each(function() {
             var href = $('a.imgFrame', this).attr('href');
             if (href.lastIndexOf('/') > 0) {
                 console.log($('h3', this).text());
             }
     });
-});*/
+}); */-->
 
 
-   </script>
-      
-     
+  
+      <script> 
+
+  var cheerio = require('cheerio');
+var request = require('request');
+request('https://www.dealabs.com/nouveaux', function (error, response, body) {
+console.log(body);
+
+});
+    /* 
+     var i = 0;
+     for(i = 0; i<tab.length; i++){
+$('.dealabs').append("<div class>"<a href="+tab[1]")
+
+document.getElementById()innerHtml += tab;
+};
+console.log(tab[0].nom);
+
+     })*/  
+
     </script> 
 
-
+<script src="js/jquery-3.3.1.min.js">  </script>
+    <script src="js/bootstrap.js">
   </body>
 </html>
