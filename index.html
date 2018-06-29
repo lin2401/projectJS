@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>projet dealabs</title>
+  
+    <script src="jquery-3.3.1.min.js">  </script>
+  
+
+
+    </head>
+     
+    
+    <body>
+
+    <h1> deadlabs</h1>
+
+    <script> 
+
+var cheerio = require('cheerio');
+var request = require('request');
+request('https://www.dealabs.com/nouveaux', function (error, response, body) {
+  console.log(body);
+
+  
+
+  var tab = []
+  $('.thead-image').each(function(index, element){
+  tab[index] = {}
+
+  /*var image = $(this).find('.thread-image').text()*/
+
+  tab[index]['nom'] = $(this).find().text('');
+  tab[index]['description'] = $(this).find('')
+  tab[index]['prix'] = $(this).find('')
+  tab[index]['image'] = $(this).find()
+
+
+
+
+  })
+
+
+/*var $  = cheerio.load(body);
+var toto = $('.thead-image').each(function() {
+
+console.log($('.thread-image'));
+
+};
+*/
+  
+
+ /*objet = $ objet = cheerio.load(body);
+    $('div.theadGrid').each(function() {
+            var href = $('a.imgFrame', this).attr('href');
+            if (href.lastIndexOf('/') > 0) {
+                console.log($('h3', this).text());
+            }
+    });
+});*/
+
+
+   </script>
+      
+     
+    </script> 
+
+
+  </body>
+</html>
